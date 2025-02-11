@@ -6,6 +6,8 @@ public interface Subject {
 
   void removeObserver(Observer observer);
 
-  void setState();
+  void notifyObservers();
+
+  void setState(State state);
 
 }

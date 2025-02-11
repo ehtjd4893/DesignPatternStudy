@@ -1,2 +1,14 @@
-.DS_Store
+out/
+.gitignore.swp
+
+# Gradle 관련 파일
+.gradle/
+build/
+gradle/
+
+# IntelliJ IDEA 관련 파일
 .idea/
+*.iml
+
+# macOS 관련 파일
+.DS_Store
