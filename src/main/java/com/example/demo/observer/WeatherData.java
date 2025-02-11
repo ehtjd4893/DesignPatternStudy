@@ -7,6 +7,7 @@ public class WeatherData implements Subject {
 
   private List<Observer> observerList;
 
+
   private State state;
 
   public WeatherData(State state) {
@@ -32,7 +33,7 @@ public class WeatherData implements Subject {
   @Override
   public void notifyObservers() {
     observerList.forEach(displayElement -> {
-      displayElement.update(state);
+      displayElement.update();
     });
   }
 
@@ -57,5 +58,10 @@ public class WeatherData implements Subject {
       notifyObservers();
     }
   }
+
+  public State getState() {
+    return state;
+  }
+
 
 }
