@@ -16,6 +16,16 @@ public class Mocha extends BeverageDecorator {
 
   @Override
   public double cost() {
-    return beverage.cost() + 0.2;
+    double cost = beverage.cost();
+
+    if(beverage.getSize() == SizeEnum.TALL) {
+      cost += 0.2;
+    } else if(beverage.getSize() == SizeEnum.GRANDE) {
+      cost += 0.25;
+    } else {
+      cost += 0.3;
+    }
+
+    return cost;
   }
 }

@@ -15,6 +15,16 @@ public class Whip extends BeverageDecorator {
 
   @Override
   public double cost() {
-    return beverage.cost() + 0.1;
+    double cost = beverage.cost();
+
+    if(beverage.getSize() == SizeEnum.TALL) {
+      cost += 0.1;
+    } else if(beverage.getSize() == SizeEnum.GRANDE) {
+      cost += 0.15;
+    } else {
+      cost += 0.2;
+    }
+
+    return cost;
   }
 }
