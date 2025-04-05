@@ -2,7 +2,7 @@ package com.example.demo.factory;
 
 import com.example.demo.factory.store.ChicagoPizzaStore;
 import com.example.demo.factory.store.NYstylePizzaStore;
-import com.example.demo.factory.store.Pizza;
+import com.example.demo.factory.pizza.Pizza;
 import com.example.demo.factory.store.PizzaStore;
 
 public class FactoryApplication {

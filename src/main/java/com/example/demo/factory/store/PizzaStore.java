@@ -1,5 +1,7 @@
 package com.example.demo.factory.store;
 
+import com.example.demo.factory.pizza.Pizza;
+
 public abstract class PizzaStore {
 
   public Pizza orderPizza(String type) {
